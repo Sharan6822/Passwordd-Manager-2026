@@ -50,30 +50,80 @@ The primary objective of this project is to provide a local-first, zero-cloud se
 
 ## 🖼️ Application Screenshots & Interface Preview
 
-### 🔒 & Registration, Login Gateway & Dashboard
-|  User Registration |Login Screen | Security Dashboard |
-| :---: | :---: | :---: |
-| ![Register Screen](Snapshots/Register-Phase.png) |![Login Screen](Snapshots/Login.png) | ![Dashboard Screen](Snapshots/Dashboard.png) |
+### 1. 📝 Master Password Setup (Registration Phase 1)
+First-time setup screen allowing users to configure a secure master password with real-time strength evaluation.
+![Registration Phase 1](Snapshots/Register-Phase.png)
 
-### 🔑 Vault Management & Entry Setup
-| Vault & New Entry | Master Password Reset |
-| :---: | :---: |
-| ![New Entry Screen](Snapshots/New%20Entry.png) | ![Master Password Reset Screen](Snapshots/Forget-masterpwd.png) |
+---
 
-### 🎲 Password Generators
-| Standard Password Generator | Memorable Passphrase Generator |
-| :---: | :---: |
-| ![Standard Generator](Snapshots/Standerd-Pwd-Gen.png) | ![Memorable Generator](Snapshots/Memorable-Pwd-Gen.png) |
+### 2. 🛡️ Master Password Setup Confirmation (Registration Phase 2)
+Second step of registration for confirming the master password and initializing local PBKDF2 encryption.
+![Registration Phase 2](Snapshots/Register-Phase2.png)
 
-### 📁 CSV Tools & Breach Checker
-| CSV Import & Export | Breach Checker |
-| :---: | :---: |
-| ![CSV Import Export](Snapshots/Pwd-import-export.png) | ![Breach Check](Snapshots/Passwrod-breach-check.png) |
+---
 
-### ⚙️ Settings 
-| Settings |
-| :---: |
-| ![Settings Screen](Snapshots/settings.png) |
+### 3. 🔒 Hologram Gateway & Login Screen
+The authentication for unlocking the encrypted vault.
+![Login Screen](Snapshots/Login.png)
+
+---
+
+### 4. 📊 Sci-Fi Cybernetic Security Dashboard
+Main overview dashboard showing vault health score, total credentials count, weak/reused password alerts, and security metrics.
+![Security Dashboard](Snapshots/Dashboard.png)
+
+---
+
+### 5. 🔑 Encrypted Vault & New Credential Entry
+Interface for browsing stored credentials, viewing details, and adding new entries with automatic local AES-128 encryption.
+![Vault & New Entry](Snapshots/New%20Entry.png)
+
+---
+
+### 6. 🎲 Standard Password Generator
+Customizable password generator supporting custom length, special characters, uppercase/lowercase, and exclusion of ambiguous characters (`l`, `1`, `I`, `O`, `0`).
+![Standard Password Generator](Snapshots/Standerd-Pwd-Gen.png)
+
+---
+
+### 7. 🧠 Memorable Passphrase Generator
+Passphrase generator combining personal memorable words with numbers and symbols for easy-to-remember passwords.
+![Memorable Passphrase Generator](Snapshots/Memorable-Pwd-Gen.png)
+
+---
+
+### 8. 📁 CSV Import & Custom Export Manager
+Import passwords from browser CSV files (`Chrome`, `Firefox`, `Edge`), export vault entries, and securely shred imported files via 3-pass overwrite.
+![CSV Tools](Snapshots/Pwd-import-export.png)
+
+---
+
+### 9. 🛡️ Password Breach Checker
+Isolated, privacy-focused breach lookup tool that launches external security breach verification services in **Edge InPrivate / Incognito mode** to prevent session tracking.
+
+**Supported Breach Checking Services:**
+- 🔍 **[Have I Been Pwned](https://haveibeenpwned.com/)** — Primary database check for exposed emails and pwned password leaks.
+- 🦊 **[Firefox Monitor](https://monitor.firefox.com/)** — Mozilla's official data breach notification and exposure monitor.
+- 🕵️ **[DeHashed](https://dehashed.com/)** — Deep breach search engine for credential leak analysis.
+- 📰 **[Cybernews Leak Checker](https://cybernews.com/personal-data-leak-check/)** — Multi-billion record search engine for personal data exposures.
+- 🌐 **[Google Password Checkup](https://passwords.google.com/checkup)** — Credential safety scanner for Google account saved passwords.
+
+![Breach Checker](Snapshots/Passwrod-breach-check.png)
+
+---
+
+### 10. 🔑 Master Password Reset Workflow
+Secure reset flow for re-keying or setting up a new master password.
+
+> ⚠️ **Zero-Knowledge Emergency Reset**: Because the app uses 100% offline local encryption without remote recovery backdoors, resetting the master password requires a **complete security wipe of existing vault data**. Previous passwords cannot be recovered once wiped.
+
+![Master Password Reset](Snapshots/Forget-masterpwd.png)
+
+---
+
+### 11. ⚙️ App Settings & Preferences
+Application configuration panel for managing display options, local logs, and security settings.
+![Settings Screen](Snapshots/settings.png)
 
 ---
 
@@ -89,6 +139,8 @@ Password-Strength-Checker/
 ├── README.md                   # GitHub Repository Overview & Documentation
 │
 ├── Snapshots/                  # Application Screenshots & UI Previews
+│   ├── Register-Phase.png
+│   ├── Register-Phase2.png
 │   ├── Login.png
 │   ├── Dashboard.png
 │   ├── New Entry.png
@@ -97,7 +149,6 @@ Password-Strength-Checker/
 │   ├── Pwd-import-export.png
 │   ├── Passwrod-breach-check.png
 │   ├── Forget-masterpwd.png
-│   ├── Register-Phase.png
 │   └── settings.png
 │
 ├── core/                       # Core Security & Backend Business Logic
@@ -163,6 +214,9 @@ This is normal behavior for custom developer tools. Windows Defender flags local
 *(Alternatively, use `Launch_App.bat` or `python PasswordManager.py` to launch without any Windows warnings).*
 
 ---
+
+## 📜 License & Disclaimer
+This project is created for **educational and personal cybersecurity demonstration purposes**. Zero network data transmission occurs during vault operation.
 
 
 
