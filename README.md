@@ -62,7 +62,7 @@ Second step of registration for confirming the master password and initializing 
 
 ---
 
-### 3. 🔒 Hologram Gateway & Login Screen
+### 3. 🔒 Login Screen
 The authentication for unlocking the encrypted vault.
 ![Login Screen](Snapshots/3-Login.png)
 
