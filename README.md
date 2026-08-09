@@ -52,53 +52,62 @@ The primary objective of this project is to provide a local-first, zero-cloud se
 
 ### 1. 📝 Master Password Setup (Registration Phase 1)
 First-time setup screen allowing users to configure a secure master password with real-time strength evaluation.
-![Registration Phase 1](Snapshots/Register-Phase.png)
+![Registration Phase 1](Snapshots/1-Register-Phase.png)
 
 ---
 
 ### 2. 🛡️ Master Password Setup Confirmation (Registration Phase 2)
 Second step of registration for confirming the master password and initializing local PBKDF2 encryption.
-![Registration Phase 2](Snapshots/Register-Phase2.png)
+![Registration Phase 2](Snapshots/2-Register-Phase.png)
 
 ---
 
 ### 3. 🔒 Hologram Gateway & Login Screen
 The authentication for unlocking the encrypted vault.
-![Login Screen](Snapshots/Login.png)
+![Login Screen](Snapshots/3-Login.png)
 
 ---
 
-### 4. 📊 Sci-Fi Cybernetic Security Dashboard
+### 4. 🔑 Master Password Reset Workflow
+Secure reset flow for re-keying or setting up a new master password.
+
+> ⚠️ **Zero-Knowledge Emergency Reset**: Because the app uses 100% offline local encryption without remote recovery backdoors, resetting the master password requires a **complete security wipe of existing vault data**. Previous passwords cannot be recovered once wiped.
+
+![Master Password Reset](Snapshots/4-Forget-masterpwd.png)
+
+---
+
+### 5. 📊 Sci-Fi Cybernetic Security Dashboard
 Main overview dashboard showing vault health score, total credentials count, weak/reused password alerts, and security metrics.
-![Security Dashboard](Snapshots/Dashboard.png)
-
----
-
-### 5. 🔑 Encrypted Vault & New Credential Entry
-Interface for browsing stored credentials, viewing details, and adding new entries with automatic local AES-128 encryption.
-![Vault & New Entry](Snapshots/New%20Entry.png)
+![Security Dashboard](Snapshots/5-Dashboard.png)
 
 ---
 
 ### 6. 🎲 Standard Password Generator
 Customizable password generator supporting custom length, special characters, uppercase/lowercase, and exclusion of ambiguous characters (`l`, `1`, `I`, `O`, `0`).
-![Standard Password Generator](Snapshots/Standerd-Pwd-Gen.png)
+![Standard Password Generator](Snapshots/6S-tanderd-Pwd-Gen.png)
 
 ---
 
 ### 7. 🧠 Memorable Passphrase Generator
 Passphrase generator combining personal memorable words with numbers and symbols for easy-to-remember passwords.
-![Memorable Passphrase Generator](Snapshots/Memorable-Pwd-Gen.png)
+![Memorable Passphrase Generator](Snapshots/7-Memorable-Pwd-Gen.png)
 
 ---
 
-### 8. 📁 CSV Import & Custom Export Manager
+### 8. 🔑 Encrypted Vault & New Credential Entry
+Interface for browsing stored credentials, viewing details, and adding new entries with automatic local AES-128 encryption.
+![Vault & New Entry](Snapshots/8-New%20Entry.png)
+
+---
+
+### 9. 📁 CSV Import & Custom Export Manager
 Import passwords from browser CSV files (`Chrome`, `Firefox`, `Edge`), export vault entries, and securely shred imported files via 3-pass overwrite.
-![CSV Tools](Snapshots/Pwd-import-export.png)
+![CSV Tools](Snapshots/9-Pwd-import-export.png)
 
 ---
 
-### 9. 🛡️ Password Breach Checker
+### 10. 🛡️ Password Breach Checker
 Isolated, privacy-focused breach lookup tool that launches external security breach verification services in **Edge InPrivate / Incognito mode** to prevent session tracking.
 
 **Supported Breach Checking Services:**
@@ -108,22 +117,13 @@ Isolated, privacy-focused breach lookup tool that launches external security bre
 - 📰 **[Cybernews Leak Checker](https://cybernews.com/personal-data-leak-check/)** — Multi-billion record search engine for personal data exposures.
 - 🌐 **[Google Password Checkup](https://passwords.google.com/checkup)** — Credential safety scanner for Google account saved passwords.
 
-![Breach Checker](Snapshots/Passwrod-breach-check.png)
-
----
-
-### 10. 🔑 Master Password Reset Workflow
-Secure reset flow for re-keying or setting up a new master password.
-
-> ⚠️ **Zero-Knowledge Emergency Reset**: Because the app uses 100% offline local encryption without remote recovery backdoors, resetting the master password requires a **complete security wipe of existing vault data**. Previous passwords cannot be recovered once wiped.
-
-![Master Password Reset](Snapshots/Forget-masterpwd.png)
+![Breach Checker](Snapshots/10-Passwrod-breach-check.png)
 
 ---
 
 ### 11. ⚙️ App Settings & Preferences
 Application configuration panel for managing display options, local logs, and security settings.
-![Settings Screen](Snapshots/settings.png)
+![Settings Screen](Snapshots/11-settings.png)
 
 ---
 
@@ -139,17 +139,17 @@ Password-Strength-Checker/
 ├── README.md                   # GitHub Repository Overview & Documentation
 │
 ├── Snapshots/                  # Application Screenshots & UI Previews
-│   ├── Register-Phase.png
-│   ├── Register-Phase2.png
-│   ├── Login.png
-│   ├── Dashboard.png
-│   ├── New Entry.png
-│   ├── Standerd-Pwd-Gen.png
-│   ├── Memorable-Pwd-Gen.png
-│   ├── Pwd-import-export.png
-│   ├── Passwrod-breach-check.png
-│   ├── Forget-masterpwd.png
-│   └── settings.png
+│   ├── 1-Register-Phase.png
+│   ├── 2-Register-Phase.png
+│   ├── 3-Login.png
+│   ├── 4-Forget-masterpwd.png
+│   ├── 5-Dashboard.png
+│   ├── 6S-tanderd-Pwd-Gen.png
+│   ├── 7-Memorable-Pwd-Gen.png
+│   ├── 8-New Entry.png
+│   ├── 9-Pwd-import-export.png
+│   ├── 10-Passwrod-breach-check.png
+│   └── 11-settings.png
 │
 ├── core/                       # Core Security & Backend Business Logic
 │   ├── crypto.py               # PBKDF2-HMAC-SHA256 key derivation & Fernet encryption
