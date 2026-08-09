@@ -48,6 +48,35 @@ The primary objective of this project is to provide a local-first, zero-cloud se
 
 ---
 
+## 🖼️ Application Screenshots & Interface Preview
+
+### 🔒 Login Gateway & Dashboard
+| Login Screen | Security Dashboard |
+| :---: | :---: |
+| ![Login Screen](Snapshots/Login.png) | ![Dashboard Screen](Snapshots/Dashboard.png) |
+
+### 🔑 Vault Management & Entry Setup
+| Vault & New Entry | Master Password Reset |
+| :---: | :---: |
+| ![New Entry Screen](Snapshots/New%20Entry.png) | ![Master Password Reset Screen](Snapshots/Forget-masterpwd.png) |
+
+### 🎲 Password Generators
+| Standard Password Generator | Memorable Passphrase Generator |
+| :---: | :---: |
+| ![Standard Generator](Snapshots/Standerd-Pwd-Gen.png) | ![Memorable Generator](Snapshots/Memorable-Pwd-Gen.png) |
+
+### 📁 CSV Tools & Breach Checker
+| CSV Import & Export | Breach Checker |
+| :---: | :---: |
+| ![CSV Import Export](Snapshots/Pwd-import-export.png) | ![Breach Check](Snapshots/Passwrod-breach-check.png) |
+
+### ⚙️ Settings & Registration
+| User Registration | Settings |
+| :---: | :---: |
+| ![Register Screen](Snapshots/Register-Phase.png) | ![Settings Screen](Snapshots/settings.png) |
+
+---
+
 ## 📁 Repository Code Structure
 
 ```text
@@ -58,6 +87,18 @@ Password-Strength-Checker/
 ├── user_installer.py           # Per-user non-admin installation script
 ├── README.txt                  # Application Documentation
 ├── README.md                   # GitHub Repository Overview & Documentation
+│
+├── Snapshots/                  # Application Screenshots & UI Previews
+│   ├── Login.png
+│   ├── Dashboard.png
+│   ├── New Entry.png
+│   ├── Standerd-Pwd-Gen.png
+│   ├── Memorable-Pwd-Gen.png
+│   ├── Pwd-import-export.png
+│   ├── Passwrod-breach-check.png
+│   ├── Forget-masterpwd.png
+│   ├── Register-Phase.png
+│   └── settings.png
 │
 ├── core/                       # Core Security & Backend Business Logic
 │   ├── crypto.py               # PBKDF2-HMAC-SHA256 key derivation & Fernet encryption
@@ -125,3 +166,4 @@ This is normal behavior for custom developer tools. Windows Defender flags local
 
 ## 📜 License & Disclaimer
 This project is created for **educational and personal cybersecurity demonstration purposes**. Zero network data transmission occurs during vault operation.
+
