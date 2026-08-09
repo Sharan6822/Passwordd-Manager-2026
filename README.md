@@ -164,6 +164,7 @@ This is normal behavior for custom developer tools. Windows Defender flags local
 
 ---
 
-## 📜 License & Disclaimer
-This project is created for **educational and personal cybersecurity demonstration purposes**. Zero network data transmission occurs during vault operation.
+
+
+
 
