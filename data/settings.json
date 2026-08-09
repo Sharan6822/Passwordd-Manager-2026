@@ -1,0 +1,7 @@
+{
+    "auto_lock_minutes": 5,
+    "clipboard_clear_seconds": 20,
+    "theme": "dark",
+    "edge_path": "",
+    "secure_import_delete": true
+}
