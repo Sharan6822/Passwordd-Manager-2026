@@ -50,10 +50,10 @@ The primary objective of this project is to provide a local-first, zero-cloud se
 
 ## 🖼️ Application Screenshots & Interface Preview
 
-### 🔒 Login Gateway & Dashboard
-| Login Screen | Security Dashboard |
-| :---: | :---: |
-| ![Login Screen](Snapshots/Login.png) | ![Dashboard Screen](Snapshots/Dashboard.png) |
+### 🔒 & Registration, Login Gateway & Dashboard
+|  User Registration |Login Screen | Security Dashboard |
+| :---: | :---: | :---: |
+| ![Register Screen](Snapshots/Register-Phase.png) |![Login Screen](Snapshots/Login.png) | ![Dashboard Screen](Snapshots/Dashboard.png) |
 
 ### 🔑 Vault Management & Entry Setup
 | Vault & New Entry | Master Password Reset |
@@ -70,10 +70,10 @@ The primary objective of this project is to provide a local-first, zero-cloud se
 | :---: | :---: |
 | ![CSV Import Export](Snapshots/Pwd-import-export.png) | ![Breach Check](Snapshots/Passwrod-breach-check.png) |
 
-### ⚙️ Settings & Registration
-| User Registration | Settings |
-| :---: | :---: |
-| ![Register Screen](Snapshots/Register-Phase.png) | ![Settings Screen](Snapshots/settings.png) |
+### ⚙️ Settings 
+| Settings |
+| :---: |
+| ![Settings Screen](Snapshots/settings.png) |
 
 ---
 
